@@ -2,7 +2,7 @@ class Resource:
     """A computing resource such as Server, Storage, Database, Network etc.
     
     Parameter:
-        resource_name: A string representing the name of the resource.
+        resource_name (str): A string representing the name of the resource.
     """
     def __init__(self, resource_name:str) -> None:
         self.__resource_name = resource_name

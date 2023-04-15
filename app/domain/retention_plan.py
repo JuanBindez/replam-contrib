@@ -5,8 +5,8 @@ class RetentionPlan:
     """The snapshot's retention plan of a resource.
     
     Parameters:
-        snapshot: A Snapshot object.
-        retention_type: A string representing the type of the retention. Must be one of the 
+        snapshot (Snapshot): A Snapshot object.
+        retention_type (str): A string representing the type of the retention. Must be one of the 
         following: Standard, Gold or Platinum"
     """
     def __init__(self, snapshot:Snapshot, retention_type:str):

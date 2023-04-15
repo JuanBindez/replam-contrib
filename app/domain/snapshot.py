@@ -5,7 +5,7 @@ class Snapshot:
     """The state of a resource at a particular point in time.
     
     Parameter:
-        resource: A Resource object.
+        resource (Resource): A Resource object.
     """
     def __init__(self, resource:Resource) -> None:
         self.__resource = resource
