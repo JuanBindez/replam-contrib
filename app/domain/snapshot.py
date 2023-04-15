@@ -14,7 +14,7 @@ class Snapshot:
     def get_resource(self) -> Resource:
         return self.__resource
     
-    def get_snapshot_creation_date(self) -> datetime:
+    def get_creation_date(self) -> datetime:
         """
         Gets the snapshot creation date.
 
