@@ -35,9 +35,21 @@ The idea of retention plans and rules contained here are part of a technical tes
 ## Pytesting 🧪
 Tests can be done in two ways:
 1. Run the test scripts with the command `pytest`
-<!-- image -->
+
+![pytest_all](https://github.com/pctmoraes/replam/blob/main/img/pytest.png)
+
 2. Run each test script individually, here's an example running the `pytest .\test\test_snapshot.py`
-<!-- image -->
+
+![pytest_snapshot](https://github.com/pctmoraes/replam/blob/main/img/pytest_one.png)
+
+<hr>
+
+## Class diagram
+
+The project has three classes: Resource, Snapshot and RetentionPlan, and below is the class diagram illustrating each of them in more details:
+
+![class_diagram](https://github.com/pctmoraes/replam/blob/main/img/Replam_class_diag.jpg)
+
 </details>
 
 <hr>
@@ -78,9 +90,21 @@ A ideia de planos de retenção e regras contidas aqui fazem parte de um teste t
 ## Pytesting 🧪
 Os testes podem ser executados de duas formas:
 1. Execute os scripts de teste com o comando `pytest`
-<!-- image -->
+
+![pytest_all](https://github.com/pctmoraes/replam/blob/main/img/pytest.png)
+
 2. Execute os scripts de teste individualmente, exemplo da execução do `pytest .\test\test_snapshot.py`
-<!-- image -->
-</details>
+
+![pytest_snapshot](https://github.com/pctmoraes/replam/blob/main/img/pytest_one.png)
+
+
+<hr>
+
+## Diagrama de classes
+
+O projeto possui três classes: Resource, Snapshot e RetentionPlan, e abaixo está o diagrama de classes ilustrando cada uma delas com mais detalhes:
+
+![class_diagram](https://github.com/pctmoraes/replam/blob/main/img/Replam_class_diag.jpg)
+
 
 </details>
