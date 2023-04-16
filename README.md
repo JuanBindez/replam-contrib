@@ -2,7 +2,7 @@
 
 <details open><summary><strong>English summary</strong></summary>
 
-This repository contains the replam project, a system for managing resource backups and their retention plans.
+This repository contains the replam project, a system for managing computing resource backups and their retention plans.
 The idea of retention plans and rules contained here are part of a technical test for a Python Backend Developer job.
 
 <br>
@@ -56,7 +56,7 @@ The project has three classes: Resource, Snapshot and RetentionPlan, and below i
 
 <details><summary><strong>Sumário em português</strong></summary>
 
-Este repositório contém o projeto replam, um sistema para gerenciamento de backups de recursos e seus planos de retenção.
+Este repositório contém o projeto replam, um sistema para gerenciamento de backups de recursos de computação e seus planos de retenção.
 A ideia de planos de retenção e regras contidas aqui fazem parte de um teste técnico para uma vaga de Python Backend Developer.
 
 <br>
