@@ -9,7 +9,7 @@ class Snapshot:
     """
     def __init__(self, resource:Resource) -> None:
         if type(resource) is not Resource:
-            raise TypeError("The resource name must be a Resource object.")
+            raise TypeError("The resource must be a Resource object.")
         self.__resource = resource
         self.__creation_date = datetime.now()
     
