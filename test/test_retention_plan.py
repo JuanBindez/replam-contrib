@@ -4,8 +4,7 @@ from app.domain.resource import Resource
 from app.domain.snapshot import Snapshot
 from app.domain.retention_plan import RetentionPlan
 
-RESOURCE = Resource("EC2")
-SNAPSHOT = Snapshot(RESOURCE)
+SNAPSHOT = Snapshot(Resource("EC2"))
 
 def test_invalid_retention_type():
     with pytest.raises(TypeError):
@@ -23,10 +22,15 @@ def test_valid_retention_type():
     ret_plan_platinum = RetentionPlan(SNAPSHOT,"platinum")
     assert ret_plan_platinum.get_retention_type() == "PLATINUM"
 
-def test_retention_date():
+def test_valid_retention_date():
     today = datetime.now()
     two_months_in_future = today + timedelta(days=60)
     ret_plan_standard = RetentionPlan(SNAPSHOT,"standard")
 
     assert today < ret_plan_standard.get_retention_date()
     assert two_months_in_future > ret_plan_standard.get_retention_date()
+
+def test_invalid_retention_date():
+    yesterday = datetime.now() - timedelta(days=1)
+    with pytest.raises(ValueError):
+        retention_plan = RetentionPlan(SNAPSHOT,"platinum", yesterday)
