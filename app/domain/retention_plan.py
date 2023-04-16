@@ -11,7 +11,7 @@ class RetentionPlan:
     """
     def __init__(self, snapshot:Snapshot, retention_type:str, creation_date:datetime = None):
         if type(snapshot) is not Snapshot:
-            raise TypeError("The snapshot must be of a Snapshot type.")
+            raise TypeError("The snapshot must be a Snapshot object.")
         self.__resource_snapshot = snapshot
 
         if type(retention_type) is not str:
@@ -33,7 +33,7 @@ class RetentionPlan:
 
         Returns:
         A Snapshot object.
-          """
+        """
         return self.__resource_snapshot
 
     def get_retention_type(self) -> str:
