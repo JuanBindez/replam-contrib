@@ -23,15 +23,15 @@ def should_retain_snapshot(retention_plan:RetentionPlan) -> bool:
 
         else:
             last_day_of_month = (snapshot_date.replace(day=28) + timedelta(days=4)) \
-                                    .replace(day=1) - timedelta(days=1)           
-            last_snapshot_of_month = last_day_of_month - timedelta(days=last_day_of_month.day)            
+                                    .replace(day=1) - timedelta(days=1)
+            last_snapshot_of_month = last_day_of_month - timedelta(days=last_day_of_month.day)
             retention_period_monthly = timedelta(days=365)
             
             if retention_plan.get_retention_type() == "GOLD":
                 if snapshot_date == last_snapshot_of_month:
                     retention_period += retention_period_monthly
                 
-                expiration_date = snapshot_date + retention_period              
+                expiration_date = snapshot_date + retention_period
                 return expiration_date >= datetime.now()
             
             else:
